@@ -41,6 +41,19 @@
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
         }
 
+        /* Media query para pantallas de 375px de ancho y 667px de alto */
+@media screen and (max-width: 375px) and (max-height: 667px) {
+    .buttonInicio {
+        font-size: 5vw; /* Ajusta el tamaño de la fuente relativo al ancho de la pantalla */
+        padding: 10px 20px; /* Reduce el padding para que se ajuste mejor */
+        margin-top: 20px; /* Ajusta el margen superior */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        width: 80%; /* El botón ocupará el 80% del ancho de la pantalla */
+        display: block;
+        margin: 20px auto; /* Centra el botón horizontalmente */
+    }
+}
+
         @keyframes fadeInOut {
             0%, 100% {
                 opacity: 0.8;
@@ -72,6 +85,19 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
 
+        /* Media query para pantallas de 375px de ancho y 667px de alto */
+@media screen and (max-width: 375px) and (max-height: 667px) {
+    #showMessageBtn {
+        padding: 10px 15px; /* Reduce el padding para pantallas pequeñas */
+        margin-top: 20px; /* Reduce el margen superior para mejorar el ajuste */
+        margin-left: 0; /* Elimina el margen izquierdo para centrar el botón */
+        font-size: 14px; /* Reduce el tamaño de la fuente para mejor legibilidad */
+        width: 80%; /* Hace que el botón ocupe el 80% del ancho de la pantalla */
+        display: block;
+        margin: 20px auto; /* Centra el botón horizontalmente */
+    }
+}
+
         /* Estilo del cuadro de mensaje */
         #messageBox {
             display: none; /* Oculto por defecto */
@@ -82,12 +108,21 @@
             padding: 20px;
             background-color: #f0f8ff;
             border: 2px solid #4CAF50;
-            border-radius: 10px;
+            border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             text-align: center;
             font-size: 18px;
             z-index: 1000;
         }
+
+        /* Media query para pantallas de 375px de ancho y 667px de alto */
+@media screen and (max-width: 375px) and (max-height: 667px) {
+    #messageBox {
+        width: 90%; /* Ajusta el ancho para que encaje bien en pantallas pequeñas */
+        padding: 15px; /* Reduce el padding para que haya más espacio de contenido */
+        font-size: 16px; /* Reduce el tamaño de fuente para mejor legibilidad */
+    }
+}
 
         /* Estilo del fondo oscuro */
         #overlay {
