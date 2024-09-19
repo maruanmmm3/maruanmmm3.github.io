@@ -39,18 +39,37 @@
             cursor: pointer;
             border-radius: 50px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+            width: 40%; /* Ajuste el ancho según el tamaño de la pantalla */
+            margin: 0 auto; /* Centra el botón horizontalmente */
         }
 
-        /* Media query para pantallas de 375px de ancho y 667px de alto */
-@media screen and (min-width: 320px) and (max-width: 480px) and (min-height: 568px) and (max-height: 800px) {
+/* Estilos específicos para pantallas móviles pequeñas */
+@media screen and (max-width: 480px) {
     .buttonInicio {
-        font-size: 5vw; /* Ajusta el tamaño de la fuente relativo al ancho de la pantalla */
-        padding: 10px 20px; /* Reduce el padding para que se ajuste mejor */
-        margin-top: 20px; /* Ajusta el margen superior */
-        margin-left: 0; /* Elimina el margen izquierdo */
-        width: 80%; /* El botón ocupará el 80% del ancho de la pantalla */
-        display: block;
-        margin: 20px auto; /* Centra el botón horizontalmente */
+        font-size: 4.5vw; /* Ajusta el tamaño de la fuente según el ancho del viewport */
+        padding: 10px 20px; /* Reduce el padding en pantallas pequeñas */
+        width: 80%; /* Ancho ajustado al 80% del ancho de la pantalla en móviles */
+        margin-top: 20px;
+    }
+}
+
+/* Estilos para tablets (pantallas medianas) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .buttonInicio {
+        font-size: 3.5vw; /* Ajusta el tamaño de la fuente para pantallas medianas */
+        padding: 12px 25px; /* Ajusta el padding ligeramente para tablets */
+        width: 60%; /* Ancho ajustado al 60% del viewport */
+        margin-top: 25px;
+    }
+}
+
+/* Estilos para pantallas grandes (desktops y monitores) */
+@media screen and (min-width: 1025px) {
+    .buttonInicio {
+        font-size: 2vw; /* Tamaño de fuente más pequeño para pantallas grandes */
+        padding: 15px 30px;
+        width: 40%; /* Ancho ajustado al 40% del viewport en pantallas grandes */
+        margin-top: 30px;
     }
 }
 
@@ -75,7 +94,6 @@
          #showMessageBtn {
             padding: 10px 20px;
             margin-top: 30px;
-            margin-left: 330px;            
             font-size: 16px;
             cursor: pointer;
             background-color: #e11ee7;
@@ -83,18 +101,38 @@
             border: none;
             border-radius: 7px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            width: auto;
+            margin: 0 auto; /* Centra el botón horizontalmente */
+            display: block; /* Hacemos que el botón se comporte como un bloque */
         }
 
-        /* Media query para pantallas de 375px de ancho y 667px de alto */
-@media screen and (min-width: 320px) and (max-width: 480px) and (min-height: 568px) and (max-height: 800px) {
+/* Media query para pantallas pequeñas (móviles) */
+@media screen and (max-width: 480px) {
     #showMessageBtn {
-        padding: 10px 15px; /* Reduce el padding para pantallas pequeñas */
-        margin-top: 20px; /* Reduce el margen superior para mejorar el ajuste */
-        margin-left: 0; /* Elimina el margen izquierdo para centrar el botón */
-        font-size: 14px; /* Reduce el tamaño de la fuente para mejor legibilidad */
-        width: 80%; /* Hace que el botón ocupe el 80% del ancho de la pantalla */
-        display: block;
-        margin: 20px auto; /* Centra el botón horizontalmente */
+        padding: 8px 15px; /* Reduce ligeramente el padding para pantallas móviles */
+        font-size: 14px; /* Ajusta el tamaño de la fuente para móviles */
+        width: 80%; /* El botón ocupará el 80% del ancho de la pantalla */
+        margin-top: 20px;
+    }
+}
+
+/* Media query para pantallas medianas (tablets) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    #showMessageBtn {
+        padding: 10px 20px; /* Tamaño de padding estándar para tablets */
+        font-size: 15px; /* Ligero ajuste del tamaño de la fuente */
+        width: 60%; /* El botón ocupará el 60% del ancho en tablets */
+        margin-top: 25px;
+    }
+}
+
+/* Media query para pantallas grandes (desktops y monitores) */
+@media screen and (min-width: 1025px) {
+    #showMessageBtn {
+        padding: 12px 25px; /* Padding ligeramente mayor en pantallas grandes */
+        font-size: 16px; /* Tamaño de fuente estándar para pantallas grandes */
+        width: 30%; /* El botón ocupará el 30% del ancho del viewport */
+        margin-top: 30px;
     }
 }
 
@@ -115,12 +153,30 @@
             z-index: 1000;
         }
 
-        /* Media query para pantallas de 375px de ancho y 667px de alto */
-@media screen and (min-width: 320px) and (max-width: 480px) and (min-height: 568px) and (max-height: 800px) {
+        /* Media query para pantallas pequeñas (móviles) */
+@media screen and (max-width: 480px) {
     #messageBox {
-        width: 90%; /* Ajusta el ancho para que encaje bien en pantallas pequeñas */
-        padding: 15px; /* Reduce el padding para que haya más espacio de contenido */
-        font-size: 16px; /* Reduce el tamaño de fuente para mejor legibilidad */
+        width: 80%; /* El cuadro ocupa el 80% del ancho del viewport en móviles */
+        font-size: 16px; /* Ajuste del tamaño de fuente para pantallas pequeñas */
+        padding: 15px; /* Reducimos el padding en móviles */
+    }
+}
+
+/* Media query para pantallas medianas (tablets) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    #messageBox {
+        width: 60%; /* Ajuste del ancho al 60% del viewport */
+        font-size: 17px; /* Ligero ajuste del tamaño de fuente */
+        padding: 18px; /* Ajuste del padding para tablets */
+    }
+}
+
+/* Media query para pantallas grandes (desktops y monitores) */
+@media screen and (min-width: 1025px) {
+    #messageBox {
+        width: 50%; /* El cuadro ocupa el 50% del ancho del viewport */
+        font-size: 18px; /* Tamaño de fuente para pantallas grandes */
+        padding: 20px; /* Padding mayor en pantallas grandes */
     }
 }
 
