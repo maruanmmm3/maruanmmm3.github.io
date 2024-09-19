@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Osita</title>
+    <link rel="stylesheet" href="styleMensaje.css"> <!-- Vincula el archivo CSS -->
+</head>
+<body>
+    <div>
+        <h1>MI AMOR, Mi OSITA!!(●'◡'●)💕</h1>
+        <h2>Tengo un regalo para ti✍(◔◡◔)👉👈</h2>
+        <button onclick="reproducirAudio()" id="showMessageBtn">Presiona aquí mi Rayza🧸</button>
+    </div>
+
+   <!-- Elemento de audio oculto -->
+   <audio id="miAudio" style="display: none;">
+        <source src="./mp3/Audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+    </audio>
+    
+    <!-- Fondo oscuro -->
+    <div id="overlay"></div>
+
+    <!-- Cuadro de mensaje -->
+    <div id="messageBox">
+        Antes de abrir el Regalo tengo unas palabras:  💕<br>
+        
+        Hoy, en este dia, te entrego algo muy lindo 
+        como símbolo de todo lo que siento por ti. 
+        Quiero que sepas que te amo muchísimo y, aunque a veces no lo parezca me
+        has enseñado muchas cosas. Gracias a ti puedo ver el mundo con otros ojos ,
+        y poder ser mejor cada día.
+        
+        Mi amada Rayza esta es mi forma de demostrarte mi amor y cariño , 
+        de la manera más sincera que conozco como ves es 😅 algo muy mio pero viene del corazon ❤️. 
+        Siempre voy a estar a tu lado, apoyándote en todo lo que te propongas, 
+        porque para mí eres especial ver tus ojos me hace sentir eso, en el momento que te veo fijamente 
+        me encantaria que el tiempo se detubiera en ese momento mi corazon late con intencidad por ti , tus defectos y virtudes me facinaron 
+        y te escojo a ti unicamente seras tu el unico y verdadero amor de mi vida Te amo mucho osita de mi corazon que a veces 
+        no puedo expresarlo con palabras gracias por estar en mi vida TE AMO ❤️, Mi Osita Rosadita.
+        <br><br>
+        <!-- <button class="buttonInicio" onclick="window.location.href='rosas.html'">Ver regalo☞❤️</button> -->
+        <button class="buttonInicio" onclick="irARosas()">Ver regalo☞❤️</button>
+
+        <button id="closeBtn" onclick="detenerMusica()">Cerrar</button>
+    </div>
+</body>
+<script src="scriptmusica.js"></script>
+<script src="scriptMensaje.js"></script>
+
+<script>   
+ </script>
+</html>
